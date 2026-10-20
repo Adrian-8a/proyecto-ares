@@ -35,6 +35,10 @@ Then open http://127.0.0.1:5000 and enter a tag, for example `#2UQ99VLU2`.
 
 For production: `gunicorn app:app`.
 
+## Deployment status
+
+The app was originally deployed on Heroku (2022). Heroku [ended its free plan on November 28, 2022](https://www.heroku.com/blog/next-chapter/) and shut down all free apps, so that deployment is no longer online. The `Procfile` is kept so it can be deployed again on any platform that supports it (Heroku, Render, Railway).
+
 ## Limitations and next steps
 
 - Country and clan are encoded as integers, so the model treats them as ordered numbers. Better options would be one-hot or target encoding for country and dropping the clan id.
